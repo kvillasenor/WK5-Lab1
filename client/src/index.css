@@ -1,0 +1,189 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f7f7f7;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.task-list {
+width: 100%;
+}
+
+.task-list h2 {
+margin-bottom: 1rem;
+}
+
+.task-list-items {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.task-list-items > li {
+margin: 0;
+}
+
+.task-list-empty {
+margin: 0;
+padding: 1.5rem;
+border: 1px solid #ddd;
+border-radius: 6px;
+background: #fff;
+text-align: center;
+}
+
+.task-item {
+padding: 1rem;
+border: 1px solid #ddd;
+border-radius: 6px;
+background: #fff;
+}
+
+.task-item-header {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 1rem;
+}
+
+.task-item-title {
+margin: 0;
+font-size: 1.1rem;
+}
+
+.task-item-description {
+margin: 0.75rem 0;
+line-height: 1.5;
+}
+
+.task-item-details {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem 2rem;
+margin: 0;
+}
+
+.task-item-details div {
+display: flex;
+gap: 0.35rem;
+}
+
+.task-item-details dt {
+font-weight: 600;
+}
+
+.task-item-details dd {
+margin: 0;
+}
+
+.task-item-status {
+flex-shrink: 0;
+padding: 0.25rem 0.5rem;
+border-radius: 4px;
+font-size: 0.875rem;
+font-weight: 600;
+}
+
+.task-item-status-completed {
+background: #e8f5e9;
+}
+
+.task-item-status-pending {
+background: #f5f5f5;
+}
+
+.task-item-completed .task-item-title {
+text-decoration: line-through;
+}
+
+.task-form {
+max-width: 600px;
+padding: 1.25rem;
+border: 1px solid #ddd;
+border-radius: 6px;
+background: #fff;
+}
+
+.task-form h2 {
+margin-top: 0;
+margin-bottom: 1.25rem;
+}
+
+.task-form-field {
+display: flex;
+flex-direction: column;
+gap: 0.4rem;
+margin-bottom: 1rem;
+}
+
+.task-form-field label {
+font-weight: 600;
+}
+
+.task-form-field input,
+.task-form-field textarea,
+.task-form-field select {
+width: 100%;
+box-sizing: border-box;
+padding: 0.6rem;
+border: 1px solid #bbb;
+border-radius: 4px;
+font: inherit;
+}
+
+.task-form-field textarea {
+resize: vertical;
+}
+
+.task-form button {
+padding: 0.6rem 1rem;
+border: 0;
+border-radius: 4px;
+font: inherit;
+font-weight: 600;
+cursor: pointer;
+}
+
+.task-form-field input:focus-visible,
+.task-form-field textarea:focus-visible,
+.task-form-field select:focus-visible,
+.task-form button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.tasks-page {
+max-width: 900px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+.tasks-page-header {
+margin-bottom: 2rem;
+}
+
+.tasks-page-header h1 {
+margin: 0 0 0.5rem;
+}
+
+.tasks-page-header p {
+margin: 0;
+}
+
+.tasks-page-content {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
